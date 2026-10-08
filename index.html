@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Константин | Партнёр JIMON GROUP</title>
+
+    <meta name="description"
+          content="Личная страница Константина — партнёра JIMON GROUP. Знакомство с компанией, продукцией и возможностями партнёрства.">
+
+    <style>
+        :root {
+            --green: #145c45;
+            --green-dark: #0b3f30;
+            --green-light: #e9f5ef;
+            --gold: #c7a45b;
+            --cream: #f8f6f0;
+            --white: #ffffff;
+            --text: #24312c;
+            --muted: #6b7771;
+            --border: #dfe7e2;
+            --shadow: 0 15px 45px rgba(20, 92, 69, 0.10);
+            --radius: 22px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Arial, sans-serif;
+            color: var(--text);
+            background: var(--cream);
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1120px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+        /* HEADER */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(248, 246, 240, 0.94);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(20, 92, 69, 0.08);
+        }
+
+        .nav {
+            min-height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            font-weight: 800;
+            color: var(--green-dark);
+            letter-spacing: 0.5px;
+        }
+
+        .logo-mark {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--green);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 26px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .nav-links a:hover {
+            color: var(--green);
+        }
+
+        .nav-button {
+            background: var(--green);
+            color: white !important;
+            padding: 11px 18px;
+            border-radius: 12px;
+            font-weight: 700;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 680px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 85% 20%, rgba(199,164,91,0.16), transparent 28%),
+                radial-gradient(circle at 10% 90%, rgba(20,92,69,0.10), transparent 30%),
+                var(--cream);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            align-items: center;
+            gap: 70px;
+            padding: 90px 0;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            color: var(--green);
+            background: var(--green-light);
+            padding: 8px 14px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 22px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 6vw, 72px);
+            line-height: 1.03;
+            letter-spacing: -2px;
+            color: var(--green-dark);
+            margin-bottom: 26px;
+        }
+
+        .hero-text {
+            font-size: 19px;
+            color: var(--muted);
+            max-width: 650px;
+            margin-bottom: 34px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
+            padding: 0 24px;
+            border-radius: 14px;
+            font-weight: 700;
+            transition: 0.2s ease;
+        }
+
+        .button-primary {
+            background: var(--green);
+            color: white;
+            box-shadow: 0 10px 25px rgba(20, 92, 69, 0.20);
+        }
+
+        .button-primary:hover {
+            background: var(--green-dark);
+            transform: translateY(-2px);
+        }
+
+        .button-secondary {
+            background: white;
+            color: var(--green);
+            border: 1px solid var(--border);
+        }
+
+        .button-secondary:hover {
+            border-color: var(--green);
+            transform: translateY(-2px);
+        }
+
+        .hero-card {
+            background: white;
+            border-radius: 30px;
+            padding: 38px;
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(20,92,69,0.08);
+        }
+
+        .hero-card-top {
+            color: var(--gold);
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero-card h3 {
+            color: var(--green-dark);
+            font-size: 26px;
+            margin-bottom: 12px;
+        }
+
+        .hero-card p {
+            color: var(--muted);
+        }
+
+        .hero-list {
+            list-style: none;
+            margin-top: 25px;
+        }
+
+        .hero-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 95px 0;
+        }
+
+        .section-head {
+            max-width: 760px;
+            margin-bottom: 48px;
+        }
+
+        .section-label {
+            color: var(--green);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-size: clamp(32px, 4vw, 48px);
+            line-height: 1.1;
+            color: var(--green-dark);
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+        }
+
+        .section-description {
+            color: var(--muted);
+            font-size: 17px;
+        }
+
+        /* ABOUT */
+
+        .about {
+            background: white;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .quote {
+            border-left: 4px solid var(--gold);
+            padding: 20px 25px;
+            margin-top: 28px;
+            background: var(--cream);
+            border-radius: 0 15px 15px 0;
+            font-weight: 600;
+            color: var(--green-dark);
+        }
+
+        .about-card {
+            background: var(--green);
+            color: white;
+            padding: 42px;
+            border-radius: 28px;
+            box-shadow: var(--shadow);
+        }
+
+        .about-card h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-card p {
+            color: rgba(255,255,255,0.85);
+        }
+
+        /* VIDEO */
+
+        .video-section {
+            background: var(--green-dark);
+            color: white;
+        }
+
+        .video-section h2 {
+            color: white;
+        }
+
+        .video-section .section-description {
+            color: rgba(255,255,255,0.72);
+        }
+
+        .video-wrapper {
+            background: #000;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+        }
+
+        video {
+            width: 100%;
+            display: block;
+            max-height: 650px;
+        }
+
+        .video-note {
+            margin-top: 18px;
+            color: rgba(255,255,255,0.62);
+            font-size: 14px;
+        }
+
+        /* JIMON */
+
+        .jimon-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .feature {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 30px;
+            border-radius: var(--radius);
+            transition: 0.2s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow);
+        }
+
+        .feature-number {
+            color: var(--gold);
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+
+        .feature h3 {
+            color: var(--green-dark);
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: var(--muted);
+        }
+
+        /* AXIS */
+
+        .axis {
+            background: white;
+        }
+
+        .axis-intro {
+            max-width: 850px;
+            color: var(--muted);
+            font-size: 18px;
+            margin-bottom: 35px;
+        }
+
+        .axis-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+        }
+
+        .axis-item {
+            background: var(--green-light);
+            border-radius: 15px;
+            padding: 18px 20px;
+            color: var(--green-dark);
+            font-weight: 600;
+        }
+
+        .axis-item span {
+            display: block;
+            color: var(--gold);
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        /* CATALOG */
+
+        .catalog-card {
+            background: linear-gradient(135deg, var(--green), var(--green-dark));
+            color: white;
+            padding: 55px;
+            border-radius: 30px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .catalog-card h2 {
+            color: white;
+        }
+
+        .catalog-card p {
+            color: rgba(255,255,255,0.8);
+            max-width: 650px;
+        }
+
+        .catalog-button {
+            background: white;
+            color: var(--green-dark);
+            white-space: nowrap;
+        }
+
+        /* HOW */
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .step {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 30px;
+        }
+
+        .step-number {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: var(--green-light);
+            color: var(--green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .step h3 {
+            margin-bottom: 10px;
+            color: var(--green-dark);
+        }
+
+        .step p {
+            color: var(--muted);
+        }
+
+        /* REGISTRATION */
+
+        .registration {
+            background: #eef6f1;
+        }
+
+        .registration-grid {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .qr-card {
+            background: white;
+            border-radius: 28px;
+            padding: 28px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .qr-card img {
+            width: 270px;
+            height: 270px;
+            object-fit: contain;
+            margin: 0 auto 20px;
+            border-radius: 12px;
+        }
+
+        .qr-card strong {
+            display: block;
+            color: var(--green-dark);
+            margin-bottom: 5px;
+        }
+
+        .qr-card small {
+            color: var(--muted);
+        }
+
+        /* TELEGRAM */
+
+        .telegram {
+            text-align: center;
+            background: white;
+        }
+
+        .telegram-box {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .telegram-box p {
+            color: var(--muted);
+            font-size: 18px;
+            margin-bottom: 28px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #082f24;
+            color: rgba(255,255,255,0.72);
+            padding: 45px 0;
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .footer-brand {
+            color: white;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 22px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .copyright {
+            margin-top: 28px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 850px) {
+
+            .container {
+                width: min(100% - 28px, 700px);
+            }
+
+            .nav {
+                min-height: 65px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-grid,
+            .about-grid,
+            .registration-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .hero {
+                min-height: auto;
+            }
+
+            .hero-grid {
+                padding: 65px 0;
+            }
+
+            h1 {
+                font-size: 44px;
+                letter-spacing: -1.5px;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .jimon-grid,
+            .axis-grid,
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .catalog-card {
+                grid-template-columns: 1fr;
+                padding: 35px;
+            }
+
+            .catalog-button {
+                width: 100%;
+            }
+
+            .footer-grid {
+                flex-direction: column;
+            }
+
+            .qr-card {
+                max-width: 360px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <div class="container nav">
+
+        <a href="#top" class="logo">
+            <span class="logo-mark">J</span>
+            <span>JIMON GROUP</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#about">Обо мне</a>
+            <a href="#jimon">О компании</a>
+            <a href="#axis">Ось Кишечник-X</a>
+            <a href="#catalog">Каталог</a>
+            <a href="#start">Как начать</a>
+
+            <a
+                class="nav-button"
+                href="https://classone.jinmu10a.com/#/pages/login/register?share_code=1110243284&is_share=1"
+                target="_blank"
+                rel="noopener"
+            >
+                Стать партнёром
+            </a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main id="top">
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container hero-grid">
+
+            <div>
+
+                <div class="eyebrow">
+                    Личная страница партнёра JIMON GROUP
+                </div>
+
+                <h1>
+                    Здоровье.<br>
+                    Развитие.<br>
+                    Возможности.
+                </h1>
+
+                <p class="hero-text">
+                    Меня зовут Константин, и я развиваю бизнес вместе
+                    с JIMON GROUP. Здесь я рассказываю о компании,
+                    продукции и возможности построить собственную
+                    партнёрскую команду.
+                </p>
+
+                <div class="buttons">
+
+                    <a
+                        class="button button-primary"
+                        href="https://classone.jinmu10a.com/#/pages/login/register?share_code=1110243284&is_share=1"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Стать партнёром
+                    </a>
+
+                    <a
+                        class="button button-secondary"
+                        href="#video"
+                    >
+                        Посмотреть видео
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <div class="hero-card-top">✦</div>
+
+                <h3>
+                    Почему я выбрал JIMON GROUP
+                </h3>
+
+                <p>
+                    Я искал возможность, которая сочетает пользу
+                    для людей, развитие команды и реальную
+                    возможность дополнительного дохода.
+                </p>
+
+                <ul class="hero-list">
+                    <li>Более 30 лет развития компании</li>
+                    <li>Традиционная китайская медицина</li>
+                    <li>Собственные плантации растений</li>
+                    <li>Продуктовая линейка и каталог</li>
+                    <li>Возможность развивать бизнес онлайн</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <div class="container about-grid">
+
+            <div class="about-text">
+
+                <div class="section-label">
+                    Обо мне
+                </div>
+
+                <h2>
+                    Я не просто продаю продукцию
+                </h2>
+
+                <p>
+                    Моя цель — не просто продавать продукцию,
+                    а строить команду и помогать людям разобраться
+                    в возможностях партнёрства.
+                </p>
+
+                <p>
+                    Я хочу создать пространство, где человек может
+                    спокойно познакомиться с компанией, посмотреть
+                    продукцию, изучить условия и самостоятельно
+                    принять решение.
+                </p>
+
+                <div class="quote">
+                    Если вы ищете возможность развиваться вместе
+                    с международной компанией — давайте знакомиться.
+                </div>
+
+            </div>
+
+
+            <div class="about-card">
+
+                <h3>
+                    Мой подход
+                </h3>
+
+                <p>
+                    Без давления и обещаний лёгких денег.
+                    Сначала разобраться в компании, продукте
+                    и модели работы — затем принимать решение.
+                </p>
+
+                <br>
+
+                <p>
+                    Я открыт к общению и готов рассказать,
+                    с чего можно начать.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- VIDEO -->
+
+    <section class="video-section" id="video">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div class="section-label">
+                    Знакомство
+                </div>
+
+                <h2>
+                    Посмотрите видео о концепции
+                </h2>
+
+                <p class="section-description">
+                    Восемь минут, чтобы получить общее представление
+                    о подходе и философии компании.
+                </p>
+
+            </div>
+
+
+            <div class="video-wrapper">
+
+                <video
+                    controls
+                    playsinline
+                    preload="metadata"
+                >
+                    <source
+                        src="video/video_TKM.mp4"
+                        type="video/mp4"
+                    >
+
+                    Ваш браузер не поддерживает воспроизведение видео.
+                </video>
+
+            </div>
+
+            <div class="video-note">
+                Видео размещено отдельно от страницы, чтобы сайт
+                загружался быстрее.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- JIMON GROUP -->
+
+    <section id="jimon">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div class="section-label">
+                    JIMON GROUP
+                </div>
+
+                <h2>
+                    Компания и её подход
+                </h2>
+
+                <p class="section-description">
+                    JIMON GROUP позиционирует себя как международную
+                    компанию, развивающую направление традиционной
+                    китайской медицины и собственную продуктовую базу.
+                </p>
+
+            </div>
+
+
+            <div class="jimon-grid">
+
+                <article class="feature">
+                    <div class="feature-number">01</div>
+
+                    <h3>
+                        Более 30 лет
+                    </h3>
+
+                    <p>
+                        Компания указывает более трёх десятилетий
+                        развития производства и собственной научной базы.
+                    </p>
+                </article>
+
+
+                <article class="feature">
+                    <div class="feature-number">02</div>
+
+                    <h3>
+                        Собственное сырьё
+                    </h3>
+
+                    <p>
+                        Компания заявляет о собственных плантациях
+                        лекарственных растений.
+                    </p>
+                </article>
+
+
+                <article class="feature">
+                    <div class="feature-number">03</div>
+
+                    <h3>
+                        Сертификация
+                    </h3>
+
+                    <p>
+                        На официальном сайте компании представлены
+                        сведения о GMP, Halal, Kosher и декларации ЕАЭС.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AXIS -->
+
+    <section class="axis" id="axis">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div class="section-label">
+                    Концепция
+                </div>
+
+                <h2>
+                    «Ось Кишечник-X»
+                </h2>
+
+                <p class="axis-intro">
+                    «Ось Кишечник-X» — концепция, представленная
+                    в материалах JIMON GROUP как основа одного
+                    из подходов к продуктовой матрице.
+                </p>
+
+            </div>
+
+
+            <div class="axis-grid">
+
+                <div class="axis-item">
+                    <span>01</span>
+                    Кишечник — мозг
+                </div>
+
+                <div class="axis-item">
+                    <span>02</span>
+                    Кишечник — глаза
+                </div>
+
+                <div class="axis-item">
+                    <span>03</span>
+                    Кишечник — сердце
+                </div>
+
+                <div class="axis-item">
+                    <span>04</span>
+                    Кишечник — ЖКТ
+                </div>
+
+                <div class="axis-item">
+                    <span>05</span>
+                    Кишечник — лёгкие
+                </div>
+
+                <div class="axis-item">
+                    <span>06</span>
+                    Кишечник — печень
+                </div>
+
+                <div class="axis-item">
+                    <span>07</span>
+                    Кишечник — почки
+                </div>
+
+                <div class="axis-item">
+                    <span>08</span>
+                    Кишечник — кости
+                </div>
+
+                <div class="axis-item">
+                    <span>09</span>
+                    Кишечник — метаболизм
+                </div>
+
+                <div class="axis-item">
+                    <span>10</span>
+                    Кишечник — эндокринная система
+                </div>
+
+                <div class="axis-item">
+                    <span>11</span>
+                    Кишечник — репродуктивная система
+                </div>
+
+                <div class="axis-item">
+                    <span>12</span>
+                    Кишечник — иммунитет
+                </div>
+
+                <div class="axis-item">
+                    <span>13</span>
+                    Кишечник — кожа
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATALOG -->
+
+    <section id="catalog">
+
+        <div class="container">
+
+            <div class="catalog-card">
+
+                <div>
+
+                    <div class="section-label" style="color:#d9bc79;">
+                        Продукция
+                    </div>
+
+                    <h2>
+                        Каталог JIMON GROUP
+                    </h2>
+
+                    <p>
+                        Ознакомьтесь с каталогом продукции,
+                        представленным с ценами и описанием.
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <a
+                        class="button catalog-button"
+                        href="catalog/JIMON-CATALOG-PRICE.pdf"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Открыть каталог
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOW TO START -->
+
+    <section id="start">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div class="section-label">
+                    Начало
+                </div>
+
+                <h2>
+                    Как начать
+                </h2>
+
+                <p class="section-description">
+                    Если вам интересно партнёрство, начните
+                    с знакомства с информацией и регистрационной формы.
+                </p>
+
+            </div>
+
+
+            <div class="steps">
+
+                <article class="step">
+
+                    <div class="step-number">
+                        1
+                    </div>
+
+                    <h3>
+                        Познакомиться
+                    </h3>
+
+                    <p>
+                        Посмотрите видео, изучите информацию
+                        о компании и откройте каталог.
+                    </p>
+
+                </article>
+
+
+                <article class="step">
+
+                    <div class="step-number">
+                        2
+                    </div>
+
+                    <h3>
+                        Зарегистрироваться
+                    </h3>
+
+                    <p>
+                        Перейдите по регистрационной ссылке
+                        или воспользуйтесь QR-кодом.
+                    </p>
+
+                </article>
+
+
+                <article class="step">
+
+                    <div class="step-number">
+                        3
+                    </div>
+
+                    <h3>
+                        Связаться со мной
+                    </h3>
+
+                    <p>
+                        Напишите мне в Telegram. Я отвечу
+                        на вопросы и расскажу о следующих шагах.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REGISTRATION -->
+
+    <section class="registration" id="registration">
+
+        <div class="container registration-grid">
+
+            <div>
+
+                <div class="section-label">
+                    Регистрация
+                </div>
+
+                <h2>
+                    Хотите узнать больше?
+                </h2>
+
+                <p class="section-description">
+                    Зарегистрируйтесь по персональной ссылке
+                    или отсканируйте QR-код. После регистрации
+                    вы сможете продолжить знакомство с возможностями
+                    партнёрства.
+                </p>
+
+                <br>
+
+                <div class="buttons">
+
+                    <a
+                        class="button button-primary"
+                        href="https://classone.jinmu10a.com/#/pages/login/register?share_code=1110243284&is_share=1"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Перейти к регистрации
+                    </a>
+
+                    <a
+                        class="button button-secondary"
+                        href="#telegram"
+                    >
+                        Написать мне
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="qr-card">
+
+                <img
+                    src="images/1110243284.png"
+                    alt="QR-код регистрации JIMON GROUP"
+                >
+
+                <strong>
+                    Код приглашения: 1110243284
+                </strong>
+
+                <small>
+                    Отсканируйте QR-код для регистрации
+                </small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TELEGRAM -->
+
+    <section class="telegram" id="telegram">
+
+        <div class="container telegram-box">
+
+            <div class="section-label">
+                Контакты
+            </div>
+
+            <h2>
+                Давайте знакомиться
+            </h2>
+
+            <p>
+                Если у вас появились вопросы о компании,
+                продукции или партнёрстве — напишите мне
+                в Telegram.
+            </p>
+
+            <a
+                class="button button-primary"
+                href="https://t.me/konstantin_vegan"
+                target="_blank"
+                rel="noopener"
+            >
+                Telegram @konstantin_vegan
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+                <div class="footer-brand">
+                    Константин | JIMON GROUP
+                </div>
+
+                <div>
+                    Личная страница партнёра
+                </div>
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#about">
+                    Обо мне
+                </a>
+
+                <a href="#video">
+                    Видео
+                </a>
+
+                <a href="#catalog">
+                    Каталог
+                </a>
+
+                <a href="#registration">
+                    Регистрация
+                </a>
+
+                <a
+                    href="https://t.me/konstantin_vegan"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Telegram
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Константин. Партнёр JIMON GROUP.
+
+            <br><br>
+
+            Информация на странице носит ознакомительный характер
+            и не является медицинской консультацией, гарантией
+            дохода или публичной офертой.
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
